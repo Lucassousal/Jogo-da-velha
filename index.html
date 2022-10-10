@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+    <h1>Jogo da velha</h1>
+
+    <div class="container">
+        <div class="welcome">
+            <h1>Bem-vindo!</h1>
+            <p>Esse é o jogo da velha</p>
+            <p>Insira os nomes dos jogadores abaixo:</p>
+            
+            <label for="player1">Nome do primeiro jogador:</label>
+            <input type="text" name="player1" id="player1">
+            <label for="player2">Nome do segundo jogador:</label>
+            <input type="text" name="player2" id="player2">
+            <button>Iniciar</button>
+           
+        </div>
+    </div>
+
+    <div class="area">
+        <div data-item="a1" class="item b r"></div>
+        <div data-item="a2" class="item b r"></div>
+        <div data-item="a3" class="item b"></div>
+
+        <div data-item="b1" class="item b r"></div>
+        <div data-item="b2" class="item b r"></div>
+        <div data-item="b3" class="item b"></div>
+
+        <div data-item="c1" class="item r"></div>
+        <div data-item="c2" class="item r"></div>
+        <div data-item="c3" class="item"></div>
+    </div>
+
+    <div class="info">
+        <div class="infoitem">
+            <div class="infotitulo">A vez é:</div>
+            <div class="infocorpo vez">--</div>
+        </div>
+        <div class="infoitem">
+            <div class="infotitulo">Vencedor:</div>
+            <div class="infocorpo resultado">--</div>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button class="reset">Novo Jogo</button>
+        <button class="action--buttons scoreboard--button">Placar Geral</button>
+        <button class="action--buttons switchPlayers">Trocar Jogadores</button>
+    </div>
+
+    <div class="scoreboard">
+        <h2>Placar Geral</h2>
+        <table  class="scoreboard--table">
+            <tr>
+                <th>Jogador</th>
+                <th>Vitórias</th>
+                <th>Derrotas</th>
+                <th>Empate</th>
+            </tr>
+            <tr id="playerX">
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr id="playerO">
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </table>
+        <button class="action--buttons">Fechar</button>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

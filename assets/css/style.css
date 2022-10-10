@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #FFF;
+    margin: 20px 0;
+}
+
+.container{
+    position:absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    padding: 40px;
+    border-radius: 15px;
+    background-color: #222;
+}
+
+.welcome p {
+    margin-top: 30px;
+    color: #FFF
+}
+
+.welcome p:nth-child(3) {
+    margin-top: 50px;
+}
+
+.welcome label{
+    margin-top: 20px;
+    text-align: center;
+    color:#FFF
+}
+
+.welcome label:nth-child(3){
+    margin-top: 20px;
+}
+
+.welcome input{
+    width: 80%;
+    margin-top: 5px;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+
+.welcome button{
+    margin-top: 40px;
+    padding: 10px 40px;
+    width:min-content;
+    align-self: center;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #FFF;
+    border: 2px solid #FFF;
+    cursor: pointer;
+}
+
+.welcome button:hover{
+    background-color: #FFF;
+    color: #333;
+}
+
+.area {
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+}
+.area .item {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: #FFF;
+    cursor: pointer;
+}
+.item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.item.t {
+    border-top: 1px solid #FFF;
+}
+.item.l {
+    border-left: 1px solid #FFF;
+}
+.item.r {
+    border-right: 1px solid #FFF;
+}
+.item.b {
+    border-bottom: 1px solid #FFF;
+}
+
+.info {
+    width: 300px;
+    display: flex;
+    margin-top: 30px;
+    border: 1px dotted #FFF;
+    padding: 10px;
+}
+.infoitem {
+    flex: 1;
+}
+.infotitulo {
+    text-align: center;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+.infocorpo {
+    text-align: center;
+    color: #FFF;
+    font-size: 20px;
+}
+
+.reset {
+    border: 1px solid #000;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #FFF;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.action--buttons{
+    border: 1px solid #000;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #FFF;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.reset:hover,.action--buttons:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.scoreboard{
+    background-color: #333;
+    position: absolute;
+    padding: 40px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #222;
+}
+
+.scoreboard h2{
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+.scoreboard--table{
+    color: #FFF;
+    margin-bottom: 20px;
+    border: 1px solid #222;
+}
+
+.scoreboard--table tr th{
+    padding: 5px;
+}
